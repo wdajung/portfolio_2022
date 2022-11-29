@@ -1,6 +1,5 @@
 
 {
-  "homepage": "https://github.com/wdajung/portfolio_2022",
   "name": "developer-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -53,5 +52,6 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "homepage": "https://github.com/wdajung/portfolio_2022"
 }
