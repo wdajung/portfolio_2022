@@ -7,9 +7,9 @@ export const headerData = {
     status: "구직중",
     title: "Web Publisher",
     desciption0:"1988.04.14",
-    desciption1:"총 9년 1개월",
+    desciption1:"총 9년 8개월",
     desciption2:"010-8384-7886",
-    desciption3:"2023.01.01 이후",
+    desciption3:"2023.01.10 이후",
     image: avatar,
     resumePdf: resume
 }
