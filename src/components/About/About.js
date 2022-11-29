@@ -3,14 +3,14 @@ import React, { useContext } from 'react';
 import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { aboutData } from '../../data/aboutData'
-
+import Fade from 'react-reveal/Fade';
 
 
 function About() {
 
     const { theme } = useContext(ThemeContext);
     return (
-        <div className="about" id="about" style={{backgroundColor: theme.secondary}}>
+        <div className="about" id="skills" style={{backgroundColor: theme.secondary80}}>
             <div className="line-styling">
               <div className="style-circle" style={{backgroundColor: theme.primary}}></div>
               <div className="style-circle" style={{backgroundColor: theme.primary}}></div>
@@ -18,17 +18,48 @@ function About() {
             </div>
             <div className="about-body">
                 <div className="about-description">
-                    <h2 style={{color: theme.primary}}>{aboutData.title}</h2>
-                    <p style={{color:theme.tertiary80}}>{aboutData.description1}<br/><br/>{aboutData.description2}</p>
+                    <h2 style={{ color: theme.primary }}>{aboutData.title}
+                        <span>{aboutData.titleko}</span>
+                    </h2>
+
+                    <p style={{ color: theme.tertiary80 }}>{aboutData.skill1}</p>
+                    <div className="meter">
+                        <Fade left><span style={{ width: 90 + '%' }}></span></Fade>
+                    </div>
+
+                    <p style={{ color: theme.tertiary80 }}>{aboutData.skill2}</p>
+                    <div className="meter">
+                        <Fade left><span style={{ width: 80 + '%' }}></span></Fade>
+                    </div>
+
+                    <p style={{ color: theme.tertiary80 }}>{aboutData.skill3}</p>
+                    <div className="meter">
+                        <Fade left><span style={{ width: 95 + '%' }}></span></Fade>
+                    </div>
+
+                    <p style={{ color: theme.tertiary80 }}>{aboutData.skill4}</p>
+                    <div className="meter">
+                        <Fade left><span style={{ width: 90 + '%' }}></span></Fade>
+                    </div>
+
+                    <p style={{ color: theme.tertiary80 }}>{aboutData.skill5}</p>
+                    <div className="meter">
+                        <Fade left><span style={{ width: 85 + '%' }}></span>
+                        </Fade>
+                    </div>
+
+                    <p style={{ color: theme.tertiary80 }}>{aboutData.skill6}</p>
+                    <div className="meter">
+                        <Fade left><span style={{ width: 70 + '%' }}></span>
+                        </Fade>
+                    </div>
+
                 </div>
                 <div className="about-img">
-                    <img 
-                        src={aboutData.image === 1 ? theme.aboutimg1 : theme.aboutimg2}  
-                        alt="" 
-                    />
+                    <img src={theme.eduimg} alt=""/>
                 </div>
             </div>
-        </div>
+            </div>
 
     )
 }

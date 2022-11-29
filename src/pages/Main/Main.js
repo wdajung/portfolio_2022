@@ -5,25 +5,25 @@ import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog, Education, 
 import { headerData } from '../../data/headerData'
 
 function Main() {
-    return (
+return (
         <div>
             <Helmet>
                 <title>{headerData.name} - Porfolio</title>
             </Helmet>
 
-            <Navbar />        
+            <Navbar />
             <Landing />
             <About />
-            <Education />
-            <Skills />
             <Experience />
+            {/* <Education /> */}
+            {/* <Skills /> */}
             <Projects />
-            <Achievement />
-            <Services />
-            <Testimonials />
-            <Blog />
+            {/* <Achievement /> */}
+            {/* <Services /> */}
+            {/* <Testimonials /> */}
+            {/* <Blog /> */}
             <Contacts />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

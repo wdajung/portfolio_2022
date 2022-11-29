@@ -1,6 +1,11 @@
 export const aboutData = {
-    title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
+    title: "Professional Skills",
+    titleko: "보유기술 및 능력",
+    skill1: "HTML/CSS",
+    skill2: "Javascript/jQuery",
+    skill3: "반응형웹",
+    skill4: "웹접근성/크로스브라우징",
+    skill5: "워드프레스",
+    skill6: "그누보드",
     image: 2
 }

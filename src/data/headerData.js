@@ -1,9 +1,15 @@
 import resume from '../assets/pdf/resume.pdf'
+import avatar from '../assets/png/avatar.png'
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    name: 'Dajung Wee',
+    nameKo: '위다정',
+    status: "구직중",
+    title: "Web Publisher",
+    desciption0:"1988.04.14",
+    desciption1:"총 9년 1개월",
+    desciption2:"010-8384-7886",
+    desciption3:"2023.01.01 이후",
+    image: avatar,
     resumePdf: resume
 }

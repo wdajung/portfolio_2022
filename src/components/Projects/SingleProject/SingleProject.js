@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { FaPlay, FaCode } from 'react-icons/fa';
+import { FaPlay, FaCode, FaLink } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 
 import placeholder from '../../../assets/png/placeholder.png';
@@ -19,10 +19,10 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
             color: theme.tertiary,
             transition: 'all 0.2s',
             '&:hover': {
-                backgroundColor: theme.secondary,
-                color: theme.primary,
+                backgroundColor: theme.secondary100,
+                color: theme.secondary,
                 transform: 'scale(1.1)',
-                border: `2px solid ${theme.secondary}`,
+                border: `2px solid ${theme.secondary100}`,
             },
         },
         icon: {
@@ -80,7 +80,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                                 .replace(' ', '-')
                                 .toLowerCase()}-code`}
                         >
-                            <FaCode
+                            <FaLink
                                 id={`${name
                                     .replace(' ', '-')
                                     .toLowerCase()}-code`}
@@ -93,8 +93,8 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                 <p
                     className='project--desc'
                     style={{
-                        background: theme.secondary,
-                        color: theme.tertiary,
+                        background: theme.secondary90,
+                        color: theme.secondary,
                     }}
                 >
                     {desc}
@@ -102,8 +102,8 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                 <div
                     className='project--lang'
                     style={{
-                        background: theme.secondary,
-                        color: theme.tertiary80,
+                        background: theme.secondary90,
+                        color: theme.secondary,
                     }}
                 >
                     {tags.map((tag, id) => (

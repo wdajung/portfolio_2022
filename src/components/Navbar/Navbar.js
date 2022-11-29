@@ -44,6 +44,7 @@ function Navbar() {
             },
             [t.breakpoints.down('xs')]: {
                 fontSize: '2rem',
+                color: '#fff',
             },
         },
         MuiDrawer: {
@@ -105,8 +106,8 @@ function Navbar() {
         },
         drawerLinks: {
             fontFamily: 'var(--primaryFont)',
-            width: '50%',
-            fontSize: '1.3rem',
+            width: '60%',
+            fontSize: '1.2rem',
             fontWeight: 600,
             [t.breakpoints.down('sm')]: {
                 fontSize: '1.125rem',
@@ -197,7 +198,7 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#about'
+                                to='/#skills'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -205,7 +206,7 @@ function Navbar() {
                                 <div className={classes.drawerItem}>
                                     <FaUser className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
-                                        About
+                                        Skills
                                     </span>
                                 </div>
                             </NavLink>
@@ -213,7 +214,7 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#resume'
+                                to='/#experience'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -223,13 +224,13 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Resume
+                                        Experience
                                     </span>
                                 </div>
                             </NavLink>
                         </Fade>
 
-                        <Fade left>
+                        {/* <Fade left>
                             <NavLink
                                 to='/#services'
                                 smooth={true}
@@ -245,11 +246,11 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </Fade> */}
 
                         <Fade left>
                             <NavLink
-                                to='/#blog'
+                                to='/#projects'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -259,7 +260,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Blog
+                                    Projects
                                     </span>
                                 </div>
                             </NavLink>

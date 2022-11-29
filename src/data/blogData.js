@@ -4,7 +4,7 @@ export const blogData = [
         title: 'SCRAPING BILLBOARD AND IMDB USING PYTHON SELENIUM',
         description: 'Here we will use Selenium to navigate between web pages, and try to scrape data from them.',
         date: 'Aug 7, 2020',
-        image: 'https://1.bp.blogspot.com/-6vZQoWcIZeo/Xvw5ZD5Y53I/AAAAAAAABgI/GH2b5OuMaXAKuigK4diBbeYDW6dD3qVvgCK4BGAsYHg/w400-h225/selenium.jpg',
+        image: 'https://www.doosancuvex.com/wp-content/themes/dstheme/images/common/ci.png',
         url: 'https://hackzism.blogspot.com/2020/07/scraping-billboard-and-imdb-using.html'
     },
     {
@@ -48,7 +48,7 @@ export const blogData = [
 // Leave it blank instead as shown below.
 
 
-/* 
+/*
 {
     id: 1,
     title: 'Car Pooling System',
@@ -56,5 +56,5 @@ export const blogData = [
     date: 'Oct 1, 2020',
     image: '',
     url: 'https://preview.colorlib.com/theme/rezume/'
-}, 
+},
 */

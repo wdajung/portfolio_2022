@@ -13,20 +13,20 @@ function Projects() {
 
     const { theme } = useContext(ThemeContext);
 
-    
+
     const useStyles = makeStyles(() => ({
         viewAllBtn : {
-            color: theme.tertiary, 
+            color: theme.tertiary,
             backgroundColor: theme.primary,
             transition: 'color 0.2s',
             "&:hover": {
-                color: theme.secondary, 
+                color: theme.secondary,
                 backgroundColor: theme.primary,
             }
         },
         viewArr : {
-            color: theme.tertiary, 
-            backgroundColor: theme.secondary70,
+            color: theme.tertiary,
+            backgroundColor: 'theme.secondary70',
             width: '40px',
             height: '40px',
             padding: '0.5rem',
@@ -35,7 +35,7 @@ function Projects() {
             cursor: 'pointer',
             transition: 'background-color 0.2s',
             "&:hover": {
-                color: theme.tertiary, 
+                color: theme.tertiary,
                 backgroundColor: theme.secondary,
             }
         },
@@ -46,9 +46,10 @@ function Projects() {
     return (
         <>
             {projectsData.length > 0 && (
-                <div className="projects" id="projects" style={{backgroundColor: theme.secondary}}>
+                <div className="projects" id="projects" style={{ backgroundColor: theme.secondary80 }}>
                     <div className="projects--header">
-                        <h1 style={{color: theme.primary}}>Projects</h1>
+                        <h1 style={{ color: theme.primary }}>Projects
+                            <span> 최근 프로젝트</span></h1>
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
@@ -65,8 +66,8 @@ function Projects() {
                                     image={project.image}
                                 />
                             ))}
-                        </div> 
-
+                        </div>
+{/*
                         {projectsData.length > 3 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
@@ -76,7 +77,7 @@ function Projects() {
                                     </button>
                                 </Link>
                             </div>
-                        )}
+                        )} */}
                     </div>
                 </div>
             )}

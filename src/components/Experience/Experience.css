@@ -33,7 +33,7 @@
     align-items:flex-start;
     justify-content: flex-start;
     width: 90%;
-    height: 140px;
+    height: auto;
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 1.5rem;
@@ -68,8 +68,9 @@
 
 .experience-details > h4 {
     font-family: var(--primaryFont);
-    font-size: 1.225rem;
-    font-weight: 600;
+    font-size: 1.025rem;
+    font-weight: 400;
+    white-space: pre-line;
 }
 
 .experience-details > h5 {
@@ -112,7 +113,8 @@
     .experience-description {
         flex: 1;
         margin: auto;
-    }    
+        padding: erem;
+    }
     .experience-description > h1{
         font-size: 3.2rem;
     }
@@ -135,14 +137,14 @@
     .experience-card {
         padding: 1rem;
         margin-bottom: 1.5rem;
-        height: 130px;
+        /* height: 130px; */
     }
     .expcard-img {
         border-radius: 50%;
         width: 45px;
         height: 45px;
     }
-    
+
     .expcard-img > img {
         width: 30px;
     }
@@ -150,12 +152,12 @@
         font-size: 0.85rem;
         margin-bottom: 0.45rem;
     }
-    
+
     .experience-details > h4 {
-        font-size: 1.125rem;
-        line-height: 126%;
+        font-size: 0.95rem;
+        line-height: 1.7;
     }
-    
+
     .experience-details > h5 {
         font-size: 1.05rem;
         line-height: 126%;
@@ -171,8 +173,8 @@
 @media screen and (max-width: 400px) {
 
 }
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 
+
+@media only screen and (min-device-width: 320px) and (max-device-width:
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
 
 }

@@ -1,12 +1,37 @@
 /* eslint-disable */
-import { 
-    blueThemegirl, blueThemeboy, bwThemeboy, bwThemegirl, greenThemeboy, greenThemegirl, orangeThemeboy, 
+import {
+    blueThemegirl, blueThemeboy, bwThemeboy, bwThemegirl, greenThemeboy, greenThemegirl, orangeThemeboy,
     orangeThemegirl, pinkThemeboy, pinkThemegirl, purpleThemeboy, purpleThemegirl, redThemeboy, redThemegirl, yellowThemeboy,
     yellowThemegirl,eduBlack,eduBlue,eduGreen,eduOrange,eduPink,eduPurple,eduRed,eduYellow,expBlack,expBlue,expGreen,expOrange,
     expPink,expPurple,expRed,expYellow,contactsBlack,contactsBlue,contactsGreen,contactsOrange,contactsPink,contactsPurple,
     contactsRed,contactsYellow
 } from './images'
 
+export const djThemeDark = {
+    type: 'light',
+    primary: '#000000',
+    primaryIcon: '#dbdbdb',
+    primary400: '#000000',
+    primary600: '#000000',
+    primary80: '#000000cc',
+    primary50: '#97979780',
+    primary30: '#c9c9c94d',
+    secondary: '#ffffff',
+    secondary70: '#EAEAEAb3',
+    secondary50: '#EAEAEA80',
+    secondary80: '#efefef',
+    secondary90: '#484848',
+    secondary100: '#939598',
+    tertiary: '#212121',
+    tertiary80: '#212121cc',
+    tertiary70: '#212121b3',
+    tertiary50: '#21212180',
+    aboutimg1: yellowThemeboy,
+    aboutimg2: yellowThemegirl,
+    eduimg: eduYellow,
+    expimg: expYellow,
+    contactsimg: contactsYellow
+}
 
 export const greenThemeLight = {
     type: 'light',

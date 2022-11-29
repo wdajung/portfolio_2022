@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 :root {
-    --primaryFont: 'Poppins', sans-serif;
+    --primaryFont: 'Noto Sans KR','Poppins', sans-serif;
     /* --primaryFont: 'Montserrat', sans-serif; */
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
+.app h2 span, .app h1 span {display: block;font-size: 1.7rem;color: #939598;}
+.experience-description > h1 span {text-align: right;}

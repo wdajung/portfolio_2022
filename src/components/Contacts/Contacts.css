@@ -10,8 +10,8 @@
 
 .contacts--img {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 50px;
+    bottom: 50px;
     width: 280px;
     pointer-events: none;
 }
@@ -24,7 +24,9 @@
     padding: 2rem 6rem 3rem;
     width: 80%;
     height: 100%;
-    margin-top: 2rem;
+    margin: 8rem 10%;
+    position: relative;
+    border-radius: 5px;
 }
 
 .contacts--container > h1 {
@@ -44,7 +46,7 @@
 
 .contacts-form {
     display: flex;
-    flex: 0.4;
+    flex: 0.5;
     width: 100%;
 }
 
@@ -64,12 +66,12 @@
 .form-input {
     height: 50px;
     box-sizing: border-box;
-    border-radius: 50px; 
+    border-radius: 50px;
     outline: none;
     margin-bottom: 2rem;
     padding: 0.7rem 0.7rem;
     border-radius: 20px;
-    width: 100%; 
+    width: 100%;
     resize: none;
 }
 
@@ -78,7 +80,7 @@
 .form-message {
     height: 150px;
     box-sizing: border-box;
-    border-radius: 50px; 
+    border-radius: 50px;
     outline: none;
     margin-bottom: 2rem;
     padding: 0.7rem 0.7rem;
@@ -130,7 +132,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    flex: 0.6;
+    flex: 0.5;
     box-sizing: border-box;
     padding-left: 7rem;
     margin-top: 1.2rem;
@@ -153,7 +155,7 @@
     line-height: 110%;
     font-weight: 500;
     font-family: var(--primaryFont);
-    width: 45%;
+    width: auto;
     word-break: break-word;
 }
 
@@ -176,10 +178,12 @@
         width: 240px;
     }
     .contacts--container {
-        padding: 2rem 4rem;
-        width: 90%;
-        margin-top: 1rem;
+        padding: 2rem;
+        /* width: 90%;
+        margin-top: 1rem; */
     }
+
+    .contacts-details {    padding-left: 3rem;}
 }
 
 
@@ -188,8 +192,9 @@
         display: none;
     }
     .contacts--container {
-        width: 100%;
-        margin-top: 1rem;
+        /* width: 100%;
+        margin-top: 1rem; */
+        padding: 2rem;
     }
     .contacts--container > h1 {
         font-size: 3rem;
@@ -211,7 +216,7 @@
     }
     .contacts--container {
         padding: 2rem;
-        margin-top: 0rem;
+        margin-top: 5rem;
         align-items: center;
     }
     .contacts-body {
@@ -224,7 +229,7 @@
         flex: 1;
         width: 80%;
     }
-    
+
     .form-input {
         margin-bottom: 0.45rem;
     }
@@ -272,8 +277,8 @@
     }
     .submit-btn{align-self: center;}
 }
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 
+
+@media only screen and (min-device-width: 320px) and (max-device-width:
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
     .contacts-details {
         padding-left: 0rem;
@@ -325,7 +330,7 @@
         transform: rotate(0deg);
         }
         20%{
-        transform: translateX(-10px);    
+        transform: translateX(-10px);
         }
         70%{
           transform: translateX(60px);

@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100vh;
-    overflow-x: hidden;
+    min-height: 95vh;
+    overflow: hidden;
     padding: 2rem;
 }
 
@@ -88,6 +88,9 @@
         font-size: 3rem;
         margin-bottom: 30px;
     }
+    .projects {
+        padding-bottom: 5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -102,15 +105,15 @@
     .projects--viewAll a {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);  
+        transform: translateX(-50%);
     }
 }
 
 @media screen and (max-width: 400px) {
 
 }
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 
+
+@media only screen and (min-device-width: 320px) and (max-device-width:
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
 
 }

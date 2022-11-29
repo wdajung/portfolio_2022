@@ -74,7 +74,7 @@ function Landing() {
                     className='landing--container-left'
                     style={{ backgroundColor: theme.primary }}
                 >
-                    <div className='lcl--content'>
+                    {/* <div className='lcl--content'>
                         {socialsData.linkedIn && (
                             <a
                                 href={socialsData.linkedIn}
@@ -140,7 +140,7 @@ function Landing() {
                                 />
                             </a>
                         )}
-                    </div>
+                    </div> */}
                 </div>
                 <img
                     src={headerData.image}
@@ -159,12 +159,16 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: theme.tertiary }}
                     >
-                        <h6>{headerData.title}</h6>
-                        <h1>{headerData.name}</h1>
-                        <p>{headerData.desciption}</p>
+                        <h6 className='tip'>{headerData.status}</h6>
+                        <h1>{headerData.nameKo}</h1>
+                        <h6 className="line">{headerData.title}</h6>
+                        <p><strong>생년월일</strong>{headerData.desciption0}</p>
+                        <p><strong>경력사항</strong>{headerData.desciption1}</p>
+                        <p><strong>연락처</strong>{headerData.desciption2}</p>
+                        <p><strong>출근가능일</strong>{headerData.desciption3}</p>
 
                         <div className='lcr-buttonContainer'>
-                            {headerData.resumePdf && (
+                            {/* {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
                                     download='resume'
@@ -175,7 +179,7 @@ function Landing() {
                                         Download CV
                                     </Button>
                                 </a>
-                            )}
+                            )} */}
                             <NavLink
                                 to='/#contacts'
                                 smooth={true}
